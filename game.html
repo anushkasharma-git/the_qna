@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anniversary Puzzle ❤️</title>
+
+<style>
+body{
+font-family: Arial;
+background: #0f172a;
+color: white;
+text-align: center;
+padding-top: 80px;
+}
+
+input{
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:none;
+}
+
+button{
+padding:10px 20px;
+background:#ff4d6d;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+#message{
+display:none;
+font-size:22px;
+margin-top:30px;
+color:#ff9aa2;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🔐 Anniversary Lock System</h1>
+<p>Solve all questions to unlock the anniversary message</p>
+
+<div id="q1">
+<p>Question 1: Where was our first kiss?</p>
+<input id="a1" type="text">
+<button onclick="check1()">Submit</button>
+</div>
+
+<div id="q2" style="display:none;">
+<p>Question 2: In how many days do I poop?</p>
+<input id="a2" type="text">
+<button onclick="check2()">Submit</button>
+</div>
+
+<div id="q3" style="display:none;">
+<p>Question 3: Name of my first boyfriend / infatuation?</p>
+<input id="a3" type="text">
+<button onclick="check3()">Submit</button>
+</div>
+
+<div id="q4" style="display:none;">
+<p>Question 4: Topic of our longest call?</p>
+<input id="a4" type="text">
+<button onclick="check4()">Submit</button>
+</div>
+
+<div id="q5" style="display:none;">
+<p>Question 5: Girl with whom I had my first 'gand jali' incident (tumse related)?</p>
+<input id="a5" type="text">
+<button onclick="check5()">Submit</button>
+</div>
+
+<div id="q6" style="display:none;">
+<p>Question 6: Who proposed the idea of us dating first?</p>
+<input id="a6" type="text">
+<button onclick="check6()">Submit</button>
+</div>
+
+<div id="q7" style="display:none;">
+<p>Question 7: What was playing on the TV when we had our first sex?</p>
+<input id="a7" type="text">
+<button onclick="check7()">Submit</button>
+</div>
+
+<div id="message">
+<h2>❤️ ACCESS GRANTED ❤️</h2>
+<p>Happy 4 Year Anniversary!</p>
+<p>You unlocked all the memories.</p>
+<p>Thank you for the best 4 years of my life ❤️</p>
+<p>Now come claim your anniversary reward 😉</p>
+</div>
+
+<script>
+
+function check1(){
+let ans=document.getElementById("a1").value.toLowerCase();
+if(ans=="doughub"){
+document.getElementById("q2").style.display="block";
+}
+else{
+alert("Wrong answer 😛 Try again");
+}
+}
+
+function check2(){
+let ans=document.getElementById("a2").value.toLowerCase();
+if(ans=="3"){
+document.getElementById("q3").style.display="block";
+}
+else{
+alert("Wrong answer 😛 Try again");
+}
+}
+
+function check3(){
+let ans=document.getElementById("a3").value.toLowerCase();
+if(ans=="kushagra"){
+document.getElementById("q4").style.display="block";
+}
+else{
+alert("Wrong answer 😛 Try again");
+}
+}
+
+function check4(){
+let ans=document.getElementById("a4").value.toLowerCase();
+if(ans=="khushi tiwari"){
+document.getElementById("q5").style.display="block";
+}
+else{
+alert("Wrong answer 😛 Try again");
+}
+}
+
+function check5(){
+let ans=document.getElementById("a5").value.toLowerCase();
+if(ans=="jeetisha"){
+document.getElementById("q6").style.display="block";
+}
+else{
+alert("Wrong answer 😛 Try again");
+}
+}
+
+function check6(){
+let ans=document.getElementById("a6").value.toLowerCase();
+if(ans=="viraat mishra"){
+document.getElementById("q7").style.display="block";
+}
+else{
+alert("Wrong answer 😛 Try again");
+}
+}
+
+function check7(){
+let ans=document.getElementById("a7").value.toLowerCase();
+if(ans=="friends"){
+document.getElementById("message").style.display="block";
+}
+else{
+alert("Wrong answer 😛 Try again");
+}
+}
+
+</script>
+
+</body>
+</html>
